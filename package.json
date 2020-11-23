@@ -1,15 +1,15 @@
 {
-  "name": "@stackrole/gatsby-starter-foundation",
-  "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
+  "name": "@ashnaz87/afghanistan-turks-association",
+  "description": "Repository for Afghanistan Turks Association UK website",
   "version": "1.0.0",
-  "author": "Stackrole <stackrole@gmail.com>",
+  "author": "AshNaz87 <ashraf.caspian@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stackrole/gatsby-starter-foundation.git"
+    "url": "https://github.com/AshNaz87/afghanistan-turks-association.git"
   },
   "bugs": {
-    "url": "https://github.com/stackrole/gatsby-starter-foundation/issues"
+    "url": "https://github.com/AshNaz87/afghanistan-turks-association/issues"
   },
   "scripts": {
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
@@ -21,6 +21,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "bootstrap-scss": "^4.5.3",
     "gatsby": "^2.21.33",
     "gatsby-background-image": "^1.1.1",
     "gatsby-image": "^2.4.3",
@@ -40,8 +41,7 @@
     "gatsby-source-filesystem": "^2.3.3",
     "gatsby-transformer-remark": "^2.8.8",
     "gatsby-transformer-sharp": "^2.5.2",
-    "netlify-cms": "^2.10.48",
-    "netlify-cms-app": "^2.12.12",
+    "netlify-cms-app": "^2.13.3",
     "node-sass": "^4.14.1",
     "prismjs": "^1.20.0",
     "react": "^16.12.0",
