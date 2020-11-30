@@ -18,15 +18,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/assets/`,
         name: `assets`,
+        path: `${__dirname}/static/assets/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content/`,
         name: `content`,
+        path: `${__dirname}/src/content/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "gallery",
+        path: `${__dirname}/static/assets/gallery`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -79,8 +86,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Foundation`,
-        short_name: `Foundation`,
+        name: `ata-uk-website`,
+        short_name: `website`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
@@ -88,6 +95,6 @@ module.exports = {
         icon: "static" + settings.meta.iconimage,
       },
     },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
   ],
 }

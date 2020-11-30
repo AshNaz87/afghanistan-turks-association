@@ -5,13 +5,13 @@ export const MenuItems = [
     id: 0,
   },
   {
-    path: "/about",
-    title: "About",
+    path: "/news",
+    title: "News",
     id: 1,
   },
   {
-    path: "/blog",
-    title: "Blog",
+    path: "/about",
+    title: "About",
     id: 2,
   },
   {
