@@ -1,16 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
-import {RiSendPlane2Line} from "react-icons/ri";
+import { RiSendPlane2Line } from "react-icons/ri"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export const pageQuery = graphql`
-  query ContactQuery($id: String!){
-		markdownRemark(id: { eq: $id }) {
+  query ContactQuery($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       id
-			html
-			excerpt(pruneLength: 140)
+      html
+      excerpt(pruneLength: 140)
       frontmatter {
         title
       }
@@ -23,39 +23,76 @@ export const pageQuery = graphql`
   }
 `
 
-const Contact = ({data}) => {
+const Contact = ({ data }) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter } = markdownRemark
 
-  return  (
+  return (
     <Layout className="contact-page">
-      <SEO 
+      <SEO
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <div className="wrapper">
-        <h1>{frontmatter.title}</h1>
-        <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-        <form className="contact-form" action="/thanks" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Name<input type="text" name="name" required /></label>   
-          </p>
-          <p>
-            <label>Email<input type="email" name="email" required /></label>
-          </p>
-          <p>
-            <label>Subject<input type="text" name="subject" required /></label>   
-          </p>
-          <p>
-            <label>Message<textarea name="message" required ></textarea></label>
-          </p>
-          <p className="text-align-right">
-            <button className="button" type="submit">Send Message <span className="icon -right"><RiSendPlane2Line/></span></button>
-          </p>
-        </form>
+      <div className="row">
+        <div className="col-12">
+          <h1 className="text-center mb-4">{frontmatter.title}</h1>
+          <div className="description text-center">
+            Please get in touch if you have any questions or suggestions. We
+            welcome feedback. Thank you!
+          </div>
+        </div>
+        <div className="col-12 col-md-8 offset-md-2">
+          <form
+            className="contact-form"
+            action="/greeting"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <div className="form-group">
+              <input type="hidden" name="form-name" value="contact" />
+              <label htmlFor="name">Name</label>
+              <input
+                className="form-control"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+              <label htmlFor="email">Email</label>
+              <input
+                className="form-control"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+              <label htmlFor="subject">Subject</label>
+              <input
+                className="form-control"
+                type="text"
+                name="subject"
+                id="subject"
+                required
+              />
+              <label htmlFor="message">Message</label>
+              <textarea
+                className="form-control"
+                name="message"
+                id="message"
+                required
+              ></textarea>
+              <button className="btn-lg btn-primary my-4" type="submit">
+                Send Message &nbsp;
+                <span>
+                  <RiSendPlane2Line />
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-
     </Layout>
   )
 }
