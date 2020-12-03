@@ -28,6 +28,7 @@ class Navigation extends React.Component {
         <button
           onClick={this.handleToggleClick}
           className={"menu-trigger" + (this.state.showMenu ? " is-active" : "")}
+          aria-label="Menu trigger"
         >
           <div className="icon-menu-line">
             <RiMenu3Line />

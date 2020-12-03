@@ -9,7 +9,7 @@ const Support = () => (
       <h2 className="mb-4">
         Support &nbsp;
         <span>
-          <FaHeart />
+          <FaHeart style={{color: 'var(--persian-red)'}}/>
         </span>
       </h2>
       <p className="mb-5">

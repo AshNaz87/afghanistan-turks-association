@@ -7,7 +7,7 @@ const Services = () => (
       <h2 className="mb-4">
         Services &nbsp;
         <span>
-          <RiServiceLine />
+          <RiServiceLine style={{color: 'var(--persian-green)'}}/>
         </span>
       </h2>
     </div>
