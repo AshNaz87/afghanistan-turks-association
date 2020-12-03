@@ -47,8 +47,8 @@ const HomePage = ({ data }) => {
       <SEO />
       <div className="d-flex w-100 align-items-center mb-5 mobile-flex">
         <div className="col-12 col-sm-6">
-          <h1 className="title">{frontmatter.title}</h1>
-          <p className="tagline">{frontmatter.tagline}</p>
+          <h1 className="title text-center">{frontmatter.title}</h1>
+          <p className="tagline text-center">{frontmatter.tagline}</p>
         </div>
         <div className="col-12 col-sm-6">
           {Image ? (

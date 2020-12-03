@@ -55,7 +55,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Language Classes &nbsp;
               <span>
-                <GrLanguage />
+                <GrLanguage style={{color: 'var(--deep-blue)'}}/>
               </span>
             </h2>
             <p className="mb-4">
@@ -66,7 +66,6 @@ const NewsPage = ({ data }) => {
               values and identities to our children. If you wish enrol your
               child(ren), please{" "}
               <a href={`mailto:${YAMLData.contact_email}`}>
-                {" "}
                 contact our Uzbek language administrator
               </a>
               .
@@ -76,7 +75,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Support &amp; Advice &nbsp;
               <span>
-                <FaHandsHelping />
+                <FaHandsHelping style={{color: 'var(--deep-peach)'}}/>
               </span>
             </h2>
             <p className="mb-4">
@@ -90,7 +89,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Events Diary &nbsp;
               <span>
-                <FaRegCalendarAlt />
+                <FaRegCalendarAlt style={{color: 'var(--burgundy-red)'}} />
               </span>
             </h2>
             <p className="mb-4">
@@ -111,7 +110,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Gallery &nbsp;
               <span>
-                <ImImages />
+                <ImImages style={{color: 'var(--silver-slate)'}}/>
               </span>
             </h2>
           </div>
