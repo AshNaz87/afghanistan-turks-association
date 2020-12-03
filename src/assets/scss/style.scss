@@ -113,7 +113,7 @@
 	color: rgba(0,0,0,0.7)
 }
 .description {
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.4;
 	margin-bottom: 30px;
 }
@@ -257,7 +257,7 @@ article img {
 .contact-form {
 	margin-top: 36px;
 	label {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	input,
 	textarea {
@@ -265,13 +265,13 @@ article img {
 		max-width: 100%;
 		margin: 8px 0 16px;
 		padding: 16px;
-		border: 3px solid var(--primary-color);
+		border: 2px solid var(--primary-color);
 		border-radius: 12px;
 		appearance: none;
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: 600;
 		&:focus {
-			border-color: var(--input-focus-border);
+			border-color: opacity(0.8);
 		}
 	}
 	textarea {
