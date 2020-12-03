@@ -1,6 +1,7 @@
 [build]
-  publish = "public"
+  CI='gatsby build'
   command = "gatsby build"
+  publish = "public"
 
 [build.environment]
   NODE_VERSION = "12.16.3"
