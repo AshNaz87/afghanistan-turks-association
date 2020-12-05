@@ -98,7 +98,14 @@
 	}
 }
 .site-logo {
-	display: block;
+  display: block;
+}
+
+@media (max-width: $breakpoint-sm) {
+  .site-logo {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .title {
 	font-size: 48px;
@@ -369,7 +376,8 @@ article img {
 
 @media (max-width: $breakpoint-sm) {
 	.mobile-flex {
-		flex-direction: column;
+    flex-direction: column;
+    text-align: center;
 	}
 }
 

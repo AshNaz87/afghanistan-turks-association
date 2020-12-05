@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Logo = props => (
+const Logo = ({ image, width }) => (
   <Link to="/">
     <img
-      src={props.image}
+      src={image}
       className="site-logo"
       alt="ATA UK logo"
-      width={props.width}
+      width={width}
     />
   </Link>
 )
