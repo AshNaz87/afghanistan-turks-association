@@ -1,6 +1,7 @@
 import React from "React"
 import { Link } from "gatsby"
 import { FaFacebookF } from "react-icons/fa"
+
 import { MenuItems } from "../util/MenuItems"
 import YAMLData from "../content/content.yml"
 

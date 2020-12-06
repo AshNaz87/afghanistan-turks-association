@@ -49,9 +49,14 @@ const Contact = ({ data }) => {
             method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
           >
             <div className="form-group">
-              <input type="hidden" name="form-name" value="contact" />
+              <input
+                type="hidden"
+                name="form-name"
+                value="contact"
+              />
               <label htmlFor="name">Name</label>
               <input
                 className="form-control"

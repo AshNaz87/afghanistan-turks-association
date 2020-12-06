@@ -7,7 +7,7 @@ import PostCard from "./post-card"
 const PostMaker = ({ data }) => (
   <section className="home-posts">
     <h2>
-      Latest in <strong>Blog</strong>{" "}
+      Latest in <strong>Blog</strong>
       <span className="icon -right">
         <RiArrowDownLine />
       </span>

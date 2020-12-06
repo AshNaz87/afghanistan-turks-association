@@ -55,7 +55,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Language Classes &nbsp;
               <span>
-                <SiGoogleclassroom style={{color: 'var(--deep-blue)'}}/>
+                <SiGoogleclassroom style={{ color: "var(--deep-blue)" }} />
               </span>
             </h2>
             <p className="mb-4">
@@ -64,7 +64,7 @@ const NewsPage = ({ data }) => {
               Uzbek-Turkic communities across the UK. Our aim is to teach not
               only our native language but also our cultural and traditional
               values and identities to our children. If you wish enrol your
-              child(ren), please{" "}
+              child(ren), please
               <a href={`mailto:${YAMLData.contact_email}`}>
                 contact our Uzbek language administrator
               </a>
@@ -75,7 +75,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Support &amp; Advice &nbsp;
               <span>
-                <FaHandsHelping style={{color: 'var(--deep-peach)'}}/>
+                <FaHandsHelping style={{ color: "var(--deep-peach)" }} />
               </span>
             </h2>
             <p className="mb-4">
@@ -89,7 +89,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Events Diary &nbsp;
               <span>
-                <FaRegCalendarAlt style={{color: 'var(--burgundy-red)'}} />
+                <FaRegCalendarAlt style={{ color: "var(--burgundy-red)" }} />
               </span>
             </h2>
             <p className="mb-4">
@@ -110,7 +110,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Gallery &nbsp;
               <span>
-                <ImImages style={{color: 'var(--silver-slate)'}}/>
+                <ImImages style={{ color: "var(--silver-slate)" }} />
               </span>
             </h2>
           </div>

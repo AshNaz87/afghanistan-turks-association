@@ -247,13 +247,16 @@ article img {
 .page,
 .blog-page,
 .contact-page,
-.greetings-page,
 .not-found-page {
 	padding: 50px 20px;
 	.wrapper {
-		max-width: 768px;
-		margin: 0 auto;
+    max-width: 768px;
+    margin: 0 auto;
 	}
+}
+
+.greetings-wrapper {
+  text-align: center;
 }
 // Contact page
 .contact-page {

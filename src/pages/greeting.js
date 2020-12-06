@@ -6,13 +6,10 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 
 const Greeting = () => (
-  <Layout className="greetings-page">
+  <Layout>
     <SEO title="Thank you" />
     <div
-      className="wrapper"
-      style={{
-        textAlign: "center",
-      }}
+      className="greetings-wrapper"
     >
       <RiCheckboxCircleLine
         style={{
