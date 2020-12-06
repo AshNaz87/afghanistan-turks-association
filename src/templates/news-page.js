@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FaHandsHelping } from "react-icons/fa"
 import { FaRegCalendarAlt } from "react-icons/fa"
-import { GrLanguage } from "react-icons/gr"
 import { ImImages } from "react-icons/im"
+import { SiGoogleclassroom } from "react-icons/si"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -55,7 +55,7 @@ const NewsPage = ({ data }) => {
             <h2 className="mb-4">
               Language Classes &nbsp;
               <span>
-                <GrLanguage style={{color: 'var(--deep-blue)'}}/>
+                <SiGoogleclassroom style={{color: 'var(--deep-blue)'}}/>
               </span>
             </h2>
             <p className="mb-4">
