@@ -64,11 +64,7 @@ const NewsPage = ({ data }) => {
               Uzbek-Turkic communities across the UK. Our aim is to teach not
               only our native language but also our cultural and traditional
               values and identities to our children. If you wish enrol your
-              child(ren), please
-              <a href={`mailto:${YAMLData.contact_email}`}>
-                contact our Uzbek language administrator
-              </a>
-              .
+              child(ren), please <a href={`mailto:${YAMLData.contact_email}`}>contact our Uzbek language administrator</a>.
             </p>
           </div>
           <div className="col-12">
